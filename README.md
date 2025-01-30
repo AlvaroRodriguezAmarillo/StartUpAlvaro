@@ -23,6 +23,7 @@ Revive la historia del fútbol con nuestras ediciones retro de camisetas icónic
 Nuestra tienda está desarrollada con:
 - **HTML** para la estructura de la web
 - **JavaScript** para la interactividad y funcionalidades dinámicas
+- **CSS** para darle un estilo más visual
 
 ## ℹ️ Sobre Nosotros
 Ofrecemos productos de calidad para todos los aficionados. Creemos que una camiseta es más que una prenda: es una forma de mostrar amor por el deporte y los equipos que seguimos.

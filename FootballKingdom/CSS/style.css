@@ -220,3 +220,55 @@ nav {
 h2{
     margin-left: 50px;
 }
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+}
+
+/* Contenedor de los logos */
+.footer-logos {
+    display: flex;
+    justify-content: space-between; /* Distribuye los logos uniformemente */
+    align-items: center;
+    padding: 0 50px; /* Márgenes a los lados */
+    flex-wrap: wrap;
+}
+
+/* Estilos para los logos */
+.footer-logos img {
+    width: 50px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+/* Contenedor de la información */
+.footer-info {
+    background: linear-gradient(to right, #8F5E25, #FBF4A1, #8F5E25);
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; /* Separa el texto a la izquierda y los enlaces a la derecha */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el texto de derechos reservados */
+.footer-info p {
+    margin: 0;
+}
+
+/* Estilos para los enlaces */
+.footer-info a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px; /* Espaciado entre enlaces */
+    transition: color 0.3s;
+}
+
+.footer-info a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+
+}

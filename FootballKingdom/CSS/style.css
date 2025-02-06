@@ -130,6 +130,19 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Sección DESTACADOS */
+.featured {
+    margin-top: 40px;
+    margin-left: 50px; /* Alineado con el botón "ACTUALES" */
+}
+
+.featured h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    color: #FBF4A1;
+    margin-bottom: 20px;
+}
+
 /* Contenedor de los botones */
 .buttons-container {
     display: grid;
@@ -182,12 +195,27 @@ nav {
     color: #FBF4A1; /* Asegura que el texto siga siendo dorado */
 }
 
+/* Imágenes de fondo de cada botón */
 .juventus { background-image: url('../IMG/juve.png'); }
 .real-madrid { background-image: url('../IMG/madrid.png'); }
 .liverpool { background-image: url('../IMG/liverpool.png'); }
 .man-city { background-image: url('../IMG/city.png'); }
 .bayern { background-image: url('../IMG/bayern.png'); }
 .barcelona { background-image: url('../IMG/barcelona.png'); }
+
+
+
+.psg { 
+    background-image: url('../IMG/psg.png');
+    height: 450px; }
+
+.chelsea {
+    background-image: url('../IMG/chelsea.png');
+    height: 450px;  }
+
+.arsenal { 
+    background-image: url('../IMG/arsenal.png');
+    height: 450px;  }
 
 h2{
     margin-left: 50px;

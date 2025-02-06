@@ -1,0 +1,116 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Sección de los inputs personalizados */
+.product-info input {
+    background-color: black;
+    color: white;
+    border: 2px solid #C9A43C;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.product-info input::placeholder {
+    color: #C9A43C;
+}
+
+/* Botón Añadir al carrito */
+.add-to-cart {
+    background: linear-gradient(to bottom, #C9A43C, #8F5E25);
+    border: none;
+    padding: 12px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add-to-cart:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para las demás secciones (preexistentes) */
+
+/* Estilo para las imágenes */
+.product-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contenedor principal */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FBF4A1;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-info .price {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-info .old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 10px;
+}
+
+.product-info .new-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FBF4A1;
+}
+
+/* Botones de tallas */
+.size-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.size-buttons button {
+    background: linear-gradient(to bottom, #C9A43C, #8F5E25);
+    border: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.size-buttons button:hover {
+    transform: scale(1.1);
+}

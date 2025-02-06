@@ -1,0 +1,177 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Barra superior */
+.top-bar {
+    background: linear-gradient(to right, #8F5E25, #FBF4A1, #8F5E25);
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Línea divisoria */
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, #8F5E25, #FBF4A1, #8F5E25);
+    margin: 5px 0;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #8F5E25;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.search-container input {
+    border: none;
+    background: none;
+    padding: 8px;
+    color: white;
+    width: 800px;
+    outline: none;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: #FBF4A1;
+}
+
+.icons {
+    display: flex;
+    gap: 45px;
+}
+
+.icons i {
+    font-size: 30px;
+    color: #FBF4A1;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-cart-shopping {
+    margin-right: 35px;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.menu button {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #FBF4A1;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu button:hover {
+    background: linear-gradient(to right, #8F5E25, #FBF4A1, #8F5E25);
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Contenedor del formulario */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 40px;
+}
+
+.form-box {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #C9A43C;
+    width: 400px;
+    text-align: center;
+    color: #FBF4A1;
+}
+
+.form-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+input {
+    background-color: black;
+    color: white;
+    border: 2px solid #C9A43C;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #C9A43C;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(to bottom, #C9A43C, #8F5E25);
+    border: none;
+    padding: 12px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

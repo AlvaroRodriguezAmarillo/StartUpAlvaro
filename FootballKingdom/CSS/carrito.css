@@ -1,0 +1,101 @@
+/* Estilos generales para el carrito */
+.carrito-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: black;
+    color: gold;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid gold;
+}
+
+/* Estilos para el título */
+.carrito-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para la tabla de productos */
+.carrito-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.carrito-tabla th, .carrito-tabla td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid gold;
+}
+
+.carrito-tabla th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.carrito-tabla td {
+    text-align: center;
+}
+
+/* Estilos para la sección de dirección y método de pago */
+.carrito-formulario {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.carrito-formulario div {
+    flex: 1;
+    margin: 10px;
+}
+
+.carrito-formulario label {
+    display: block;
+    font-weight: bold;
+}
+
+.carrito-formulario select, .carrito-formulario input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gold;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección de resumen */
+.carrito-resumen {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.carrito-resumen p {
+    margin: 5px 0;
+}
+
+.carrito-resumen strong {
+    font-size: 18px;
+}
+
+/* Botón de compra */
+.carrito-boton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, gold, #b8860b);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.carrito-boton:hover {
+    background: linear-gradient(to right, #b8860b, gold);
+}

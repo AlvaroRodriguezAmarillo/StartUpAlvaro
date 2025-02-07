@@ -9,6 +9,9 @@
 body {
     background-color: black;
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Sección de los inputs personalizados */
@@ -17,10 +20,10 @@ body {
     color: white;
     border: 2px solid #C9A43C;
     border-radius: 5px;
-    padding: 10px;
-    width: 250px;
-    margin-bottom: 15px;
-    font-size: 16px;
+    padding: clamp(8px, 1vw, 10px);
+    width: clamp(200px, 30vw, 250px);
+    margin-bottom: clamp(10px, 2vh, 15px);
+    font-size: clamp(14px, 1.2vw, 16px);
 }
 
 .product-info input::placeholder {
@@ -31,36 +34,38 @@ body {
 .add-to-cart {
     background: linear-gradient(to bottom, #C9A43C, #8F5E25);
     border: none;
-    padding: 12px 20px;
+    padding: clamp(10px, 1.5vw, 12px) clamp(15px, 2vw, 20px);
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: clamp(16px, 1.5vw, 18px);
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s;
+    width: fit-content;
 }
 
 .add-to-cart:hover {
     transform: scale(1.1);
 }
 
-/* Estilos para las demás secciones (preexistentes) */
-
 /* Estilo para las imágenes */
 .product-container img {
-    width: 400px;
-    height: 400px;
+    width: 25vw;  /* Igual que en el primer ejemplo */
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
+    min-width: 300px; /* Para evitar que sean muy pequeñas en móviles */
 }
 
 /* Contenedor principal */
 .product-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 50px auto;
+    align-items: flex-start;
+    gap: clamp(20px, 3vw, 30px);
+    margin: 50px 5vw;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 .product-info {
@@ -68,26 +73,28 @@ body {
     flex-direction: column;
     align-items: flex-start;
     color: #FBF4A1;
+    max-width: 40vw;  /* Igual que en el primer ejemplo */
+    min-width: 300px; /* Para evitar que sea muy estrecho en móviles */
 }
 
 .product-info h1 {
-    font-size: 24px;
+    font-size: clamp(20px, 2vw, 24px);
     font-weight: bold;
 }
 
 .product-info .price {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: clamp(18px, 1.5vw, 20px);
+    margin: clamp(8px, 1vh, 10px) 0;
 }
 
 .product-info .old-price {
     text-decoration: line-through;
     color: red;
-    margin-right: 10px;
+    margin-right: clamp(8px, 1vw, 10px);
 }
 
 .product-info .new-price {
-    font-size: 22px;
+    font-size: clamp(20px, 1.8vw, 22px);
     font-weight: bold;
     color: #FBF4A1;
 }
@@ -95,17 +102,18 @@ body {
 /* Botones de tallas */
 .size-buttons {
     display: flex;
-    gap: 10px;
-    margin: 15px 0;
+    gap: clamp(8px, 1vw, 10px);
+    margin: clamp(12px, 1.5vh, 15px) 0;
+    flex-wrap: wrap;
 }
 
 .size-buttons button {
     background: linear-gradient(to bottom, #C9A43C, #8F5E25);
     border: none;
-    padding: 10px 15px;
+    padding: clamp(8px, 1vw, 10px) clamp(12px, 1.5vw, 15px);
     color: black;
     font-weight: bold;
-    font-size: 16px;
+    font-size: clamp(14px, 1.2vw, 16px);
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s;
@@ -113,4 +121,51 @@ body {
 
 .size-buttons button:hover {
     transform: scale(1.1);
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .product-info, .product-container img {
+        max-width: 45vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px;
+    }
+
+    .product-info {
+        max-width: 90vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-container img {
+        width: 90vw;
+        max-width: 500px;
+    }
+
+    .size-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        margin: 20px 10px;
+    }
+
+    .product-info input {
+        width: 90vw;
+        max-width: 300px;
+    }
+
+    .add-to-cart {
+        width: 90vw;
+        max-width: 300px;
+        text-align: center;
+    }
 }

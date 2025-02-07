@@ -9,13 +9,16 @@
 body {
     background-color: black;
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Barra superior */
 .top-bar {
     background: linear-gradient(to right, #8F5E25, #FBF4A1, #8F5E25);
     text-align: center;
-    padding: 5px;
+    padding: clamp(5px, 1vh, 8px);
     font-weight: 600;
     color: black;
 }
@@ -32,11 +35,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: clamp(10px, 2vw, 20px);
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo img {
-    height: 80px;
+    height: clamp(60px, 8vh, 80px);
 }
 
 .search-container {
@@ -46,6 +51,10 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     background-color: black;
+    flex: 1;
+    max-width: 800px;
+    min-width: 200px;
+    margin: 0 15px;
 }
 
 .search-container input {
@@ -53,7 +62,7 @@ nav {
     background: none;
     padding: 8px;
     color: white;
-    width: 800px;
+    width: 100%;
     outline: none;
 }
 
@@ -67,30 +76,32 @@ nav {
 
 .icons {
     display: flex;
-    gap: 45px;
+    gap: clamp(20px, 3vw, 45px);
 }
 
 .icons i {
-    font-size: 30px;
+    font-size: clamp(24px, 2vw, 30px);
     color: #FBF4A1;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
 .fa-cart-shopping {
-    margin-right: 35px;
+    margin-right: clamp(20px, 2vw, 35px);
 }
 
 /* Menú de navegación */
 .menu {
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: clamp(8px, 1.5vh, 10px) 0;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .menu button {
     font-family: 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: clamp(16px, 1.5vw, 18px);
     background: none;
     border: none;
     color: #FBF4A1;
@@ -111,23 +122,25 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    margin-top: 40px;
+    min-height: 70vh;
+    margin: clamp(20px, 4vh, 40px) auto;
+    padding: 0 20px;
+    flex: 1;
 }
 
 .form-box {
     background-color: black;
-    padding: 30px;
+    padding: clamp(20px, 3vw, 30px);
     border-radius: 10px;
     border: 2px solid #C9A43C;
-    width: 400px;
+    width: clamp(280px, 90vw, 400px);
     text-align: center;
     color: #FBF4A1;
 }
 
 .form-box h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: clamp(20px, 2vw, 24px);
+    margin-bottom: clamp(15px, 2vh, 20px);
 }
 
 /* Campos de entrada */
@@ -136,10 +149,10 @@ input {
     color: white;
     border: 2px solid #C9A43C;
     border-radius: 5px;
-    padding: 10px;
-    width: 250px;
-    margin-bottom: 15px;
-    font-size: 16px;
+    padding: clamp(8px, 1vw, 10px);
+    width: clamp(200px, 90%, 250px);
+    margin-bottom: clamp(12px, 1.5vh, 15px);
+    font-size: clamp(14px, 1.2vw, 16px);
 }
 
 input::placeholder {
@@ -147,7 +160,7 @@ input::placeholder {
 }
 
 label {
-    font-size: 16px;
+    font-size: clamp(14px, 1.2vw, 16px);
     margin-bottom: 5px;
     display: block;
 }
@@ -156,16 +169,18 @@ label {
 .button-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: clamp(15px, 2vh, 20px);
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 button {
     background: linear-gradient(to bottom, #C9A43C, #8F5E25);
     border: none;
-    padding: 12px 20px;
+    padding: clamp(10px, 1.5vw, 12px) clamp(15px, 2vw, 20px);
     color: black;
     font-weight: bold;
-    font-size: 16px;
+    font-size: clamp(14px, 1.2vw, 16px);
     border-radius: 5px;
     cursor: pointer;
     width: 45%;
@@ -174,4 +189,45 @@ button {
 
 button:hover {
     transform: scale(1.05);
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    .search-container {
+        order: 3;
+        margin: 10px 0;
+        min-width: 90%;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .form-box {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons {
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu button {
+        width: 90%;
+        text-align: center;
+    }
 }

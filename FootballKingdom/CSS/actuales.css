@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -110,16 +111,23 @@ nav {
 .product-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Asegura que los elementos estén alineados desde arriba */
     gap: 30px;
-    margin: 50px auto;
+    margin: 50px 5vw;  /* El contenedor ocupa un margen relativo */
+    flex-grow: 1; /* Asegura que ocupe todo el espacio disponible entre el header y el footer */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
 }
 
 /* Estilos para las imágenes */
-.product-container img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+.product-images {
+    display: flex;
+    gap: 30px; /* Espacio entre las imágenes */
+}
+
+.product-images img {
+    width: 25vw;  /* Las imágenes ocupan el 25% del ancho de la pantalla */
+    height: auto;  /* Mantienen la relación de aspecto */
+    object-fit: cover;  /* Se ajustan al área sin distorsión */
     border-radius: 10px;
 }
 
@@ -129,6 +137,7 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     color: #FBF4A1;
+    max-width: 40vw;  /* Asegura que la información ocupe un 40% del ancho de la pantalla */
 }
 
 .product-info h2 {
@@ -244,3 +253,5 @@ footer {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
+
+

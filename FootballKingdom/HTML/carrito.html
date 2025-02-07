@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../CSS/actuales.css">
     <link rel="stylesheet" href="../CSS/registro.css">
     <link rel="stylesheet" href="../CSS/carrito.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -32,87 +34,75 @@
         <div class="divider"></div>
     </header>
 
-    <section class="form-container">
-        <div class="form-box">
+    <main class="cart-container">
+        <div class="cart-box">
             <h2>TU CARRITO</h2>
-            <div class="cart-content">
-                <p><strong>Producto:</strong> Camiseta Real Madrid 2024/2025 (M, 1) - 69,99€</p>
-                <p><strong>Producto:</strong> Camiseta FC Barcelona 2024/2025 Personalizada (L, 2) - 89,99€</p>
-                <hr>
-                <h3>Dirección</h3>
-                <label for="pais">País</label>
-                <select id="pais">
-                    <option>España</option>
-                </select>
-                <label for="provincia">Provincia</label>
-                <select id="provincia">
-                    <option>Selecciona tu provincia</option>
-                    <option>A Coruña</option>
-                    <option>Álava</option>
-                    <option>Albacete</option>
-                    <option>Alicante</option>
-                    <option>Almería</option>
-                    <option>Asturias</option>
-                    <option>Ávila</option>
-                    <option>Badajoz</option>
-                    <option>Barcelona</option>
-                    <option>Burgos</option>
-                    <option>Cáceres</option>
-                    <option>Cádiz</option>
-                    <option>Cantabria</option>
-                    <option>Castellón</option>
-                    <option>Ciudad Real</option>
-                    <option>Córdoba</option>
-                    <option>Cuenca</option>
-                    <option>Girona</option>
-                    <option>Granada</option>
-                    <option>Guadalajara</option>
-                    <option>Guipúzcoa</option>
-                    <option>Huelva</option>
-                    <option>Huesca</option>
-                    <option>Jaén</option>
-                    <option>La Rioja</option>
-                    <option>Las Palmas</option>
-                    <option>León</option>
-                    <option>Lleida</option>
-                    <option>Lugo</option>
-                    <option>Madrid</option>
-                    <option>Málaga</option>
-                    <option>Murcia</option>
-                    <option>Navarra</option>
-                    <option>Ourense</option>
-                    <option>Palencia</option>
-                    <option>Pontevedra</option>
-                    <option>Salamanca</option>
-                    <option>Santa Cruz de Tenerife</option>
-                    <option>Segovia</option>
-                    <option>Sevilla</option>
-                    <option>Soria</option>
-                    <option>Tarragona</option>
-                    <option>Teruel</option>
-                    <option>Toledo</option>
-                    <option>Valencia</option>
-                    <option>Valladolid</option>
-                    <option>Vizcaya</option>
-                    <option>Zamora</option>
-                    <option>Zaragoza</option>
-                </select>
-                <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" placeholder="Escribe aquí tu dirección...">
-                <h3>Método de Pago</h3>
+            <div class="cart-grid">
+                <div class="cart-header">
+                    <span>PRODUCTO</span>
+                    <span>TALLA</span>
+                    <span>CANTIDAD</span>
+                    <span>PRECIO</span>
+                </div>
+                <div class="cart-item">
+                    <span>Camiseta Real Madrid 2024/2025</span>
+                    <span>M</span>
+                    <span>1</span>
+                    <span>69,99€</span>
+                </div>
+                <div class="cart-item">
+                    <span>Camiseta FC Barcelona 2024/2025 Personalizada</span>
+                    <span>L</span>
+                    <span>2</span>
+                    <span>89,99€</span>
+                </div>
+            </div>
+
+            <div class="shipping-info">
+                <h3>DIRECCIÓN</h3>
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select id="pais">
+                        <option value="españa">España</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia">
+                        <option value="sevilla">Sevilla</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" placeholder="Escribe aquí tu dirección...">
+                </div>
+            </div>
+
+            <div class="payment-method">
+                <h3>MÉTODO DE PAGO</h3>
                 <select id="metodo-pago">
-                    <option>PayPal</option>
-                    <option>Apple Pay</option>
-                    <option>Visa</option>
+                    <option value="paypal">PayPal</option>
                 </select>
-                <h3>Resumen</h3>
-                <p><strong>Subtotal:</strong> 159,98€</p>
-                <p><strong>Gastos de envío:</strong> GRATIS</p>
-                <p><strong>Total:</strong> 159,98€</p>
-                <button class="purchase-button" onclick="window.location.href='../index.html';">REALIZAR COMPRA</button>
+            </div>
+
+            <div class="cart-summary">
+                <h3>RESUMEN</h3>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>159,98€</span>
+                </div>
+                <div class="summary-item">
+                    <span>Gastos de envío</span>
+                    <span>GRATIS</span>
+                </div>
+                <div class="summary-item total">
+                    <span>TOTAL</span>
+                    <span>159,98€</span>
+                </div>
+                <button class="purchase-button" onclick="window.location.href='carrito.html';">REALIZAR COMPRA</button>
             </div>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="footer-logos">
@@ -129,10 +119,12 @@
         </div>
         <div class="footer-info">
             <p>©2025 Football Kingdom. Todos los derechos reservados.</p>
-            <a href="#">Mapa de sitio</a>
-            <a href="#">Términos y condiciones</a>
-            <a href="#">Políticas de privacidad</a>
-            <a href="#">Cookies</a>
+            <div class="footer-links">
+                <a href="#">Mapa de sitio</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Políticas de privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
         </div>
     </footer>
 </body>

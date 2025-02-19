@@ -217,6 +217,27 @@ nav {
     background-image: url('../IMG/arsenal.png');
     height: 450px;  }
 
+.man-city2 { 
+    background-image: url('../IMG/city.png');
+    height: 450px;  }
+
+.liverpool2 {  
+    background-image: url('../IMG/liverpool.png');
+    height: 450px;  }
+
+
+.real-madrid2 {  
+    background-image: url('../IMG/Madrid.PNG');
+    height: 450px;  }
+
+.barcelona2 {  
+    background-image: url('../IMG/barcelona.png');
+    height: 450px;  }
+
+
+.atletico2 {  
+    background-image: url('../IMG/atletico.jpg');
+    height: 450px;  }
 h2{
     margin-left: 50px;
 }

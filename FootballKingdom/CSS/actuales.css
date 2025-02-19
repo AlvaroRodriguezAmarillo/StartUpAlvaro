@@ -178,12 +178,19 @@ nav {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background 0.3s;
 }
 
 .size-buttons button:hover {
     transform: scale(1.1);
 }
+
+.size-buttons button.selected {
+    background: linear-gradient(to bottom, #8F5E25, #C9A43C);
+    color: white;
+    transform: scale(1.1);
+}
+
 
 /* Botón Añadir al carrito */
 .add-to-cart {

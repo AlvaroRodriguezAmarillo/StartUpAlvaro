@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../CSS/registro.css">
     <link rel="stylesheet" href="../CSS/carrito.css">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -44,18 +43,7 @@
                     <span>CANTIDAD</span>
                     <span>PRECIO</span>
                 </div>
-                <div class="cart-item">
-                    <span>Camiseta Real Madrid 2024/2025</span>
-                    <span>M</span>
-                    <span>1</span>
-                    <span>69,99€</span>
-                </div>
-                <div class="cart-item">
-                    <span>Camiseta FC Barcelona 2024/2025 Personalizada</span>
-                    <span>L</span>
-                    <span>2</span>
-                    <span>89,99€</span>
-                </div>
+                <div id="cart-items"></div>
             </div>
 
             <div class="shipping-info">
@@ -89,10 +77,8 @@
                 <h3>MÉTODO DE PAGO</h3>
                 <select id="metodo-pago">
                     <option value="paypal">PayPal</option>
-                    <option value="paypal">VISA</option>
-                    <option value="paypal">Apple Pay</option>
-
-
+                    <option value="visa">VISA</option>
+                    <option value="applepay">Apple Pay</option>
                 </select>
             </div>
 
@@ -100,7 +86,7 @@
                 <h3>RESUMEN</h3>
                 <div class="summary-item">
                     <span>Subtotal</span>
-                    <span>159,98€</span>
+                    <span id="subtotal">0,00€</span>
                 </div>
                 <div class="summary-item">
                     <span>Gastos de envío</span>
@@ -108,9 +94,9 @@
                 </div>
                 <div class="summary-item total">
                     <span>TOTAL</span>
-                    <span>159,98€</span>
+                    <span id="total">0,00€</span>
                 </div>
-                <button class="purchase-button" onclick="window.location.href='carrito.html';">REALIZAR COMPRA</button>
+                <button class="purchase-button">REALIZAR COMPRA</button>
             </div>
         </div>
     </main>
@@ -138,5 +124,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JS/carrito.js"></script>
 </body>
 </html>

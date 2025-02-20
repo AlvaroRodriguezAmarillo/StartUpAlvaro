@@ -238,6 +238,39 @@ nav {
 .atletico2 {  
     background-image: url('../IMG/atletico.jpg');
     height: 450px;  }
+
+.inter2 {  
+    background-image: url('../IMG/inter.jpg');
+    height: 450px;  }
+
+.milan2 {  
+    background-image: url('../IMG/milan.jpg');
+    height: 450px;  }
+
+.napoles2 {  
+    background-image: url('../IMG/napoles.jpg');
+    height: 450px;  }
+
+.bayern2 {  
+    background-image: url('../IMG/bayern.png');
+    height: 450px;  }
+
+.dortmund2 {  
+    background-image: url('../IMG/dortmund.jpg');
+    height: 450px;  }
+
+.leverkusen2 {  
+    background-image: url('../IMG/leverkusen.jpg');
+    height: 450px;  }
+
+.lyon2 {  
+    background-image: url('../IMG/lyon.jpg');
+    height: 450px;  }
+
+.monaco2 {  
+    background-image: url('../IMG/monaco.jpg');
+    height: 450px;  }    
+
 h2{
     margin-left: 50px;
 }

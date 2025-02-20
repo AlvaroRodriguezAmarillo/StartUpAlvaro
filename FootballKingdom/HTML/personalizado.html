@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipaciones Personalizadas - Football Kingdom</title>
-    <link rel="stylesheet" href="../CSS/actuales.css">
-    <link rel="stylesheet" href="../CSS/personalizado.css">
+    <title>Football Kingdom</title>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -13,59 +12,50 @@
 </head>
 <body>
     <header>
-        <div class="top-bar">🛍️ Aprovecha las mejores ofertas y descuentos disponibles 🛍️</div>
+        <div class="top-bar text-center">🛍️ Aprovecha las mejores ofertas y descuentos disponibles 🛍️</div>
         <div class="divider"></div>
-        <nav>
+        <nav class="d-flex justify-content-between align-items-center p-3">
             <div class="logo">
                 <img src="../IMG/LogotipoFootballKingdom.png" alt="Football Kingdom Logo" onclick="window.location.href='../index.html';">
             </div>
-            <div class="search-container">
-                <input type="text" placeholder="Buscar...">
-                <button><i class="fa-solid fa-search"></i></button>
+            <div class="search-container d-flex">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <button class="btn"><i class="fa-solid fa-search"></i></button>
             </div>
-            <div class="icons">
-                <i class="fa-solid fa-user" onclick="window.location.href='registro.html';"></i>
-                <i class="fa-solid fa-cart-shopping" onclick="window.location.href='carrito.html';"></i>
+            <div class="icons d-flex gap-3">
+                <i class="fa-solid fa-user icon-hover" onclick="window.location.href='../HTML/registro.html';"></i>
+                <i class="fa-solid fa-cart-shopping icon-hover" onclick="window.location.href='../HTML/carrito.html';"></i>
             </div>
         </nav>
         <div class="divider"></div>
-        <div class="menu">
+        <div class="menu d-flex justify-content-evenly py-2">
             <button>ACTUALES</button>
             <button>RETRO</button>
-            <button>PERSONALIZACIÓN</button>
+            <button  onclick="window.location.href='../HTML/personalizado.html';">PERSONALIZACIÓN</button>
             <button>DESCUENTOS</button>
         </div>
         <div class="divider"></div>
+
     </header>
 
-    <section class="product-container">
-        <div class="product-images">
-            <img src="../IMG/CamisetaBarcelonaDelantera.jpg" alt="Equipación Frontal">
-            <img src="../IMG/CamisetaBarcelonaTrasera.jpg" alt="Equipación Trasera">
-        </div>
-        <div class="product-info">
-            <h1>1ª EQUIPACIÓN REAL MADRID 2024/2025</h1>
-            <p class="price"><span class="old-price">89,99€</span> <span class="new-price">69,99€</span></p>
-            <p>Elige tu talla:</p>
-            <div class="size-buttons">
-                <button>XS</button>
-                <button>S</button>
-                <button>M</button>
-                <button>L</button>
-                <button>XL</button>
-                <button>XXL</button>
-            </div>
-
-            <!-- NUEVO SECCIÓN -->
-            <p>Elige tu nombre:</p>
-            <input type="text" placeholder="Escribe tu nombre" class="name-input">
-
-            <p>Elige tu dorsal:</p>
-            <input type="text" placeholder="Escribe tu dorsal" class="dorsal-input">
-            
-            <button class="add-to-cart" onclick="window.location.href='carrito.html';">AÑADIR AL CARRITO</button>
+    <section class="most-searched">
+        <h2>CAMISETAS PERSONALIZADAS DISPONIBLES</h2>
+        <div class="buttons-container">
+            <div class="team-button barcelona" onclick="window.location.href='../HTML/barcelonaPersonalizado.html';">
+            <span>FC BARCELONA</span></div>
+            <div class="team-button real-madrid" onclick="window.location.href='../HTML/madridPersonalizado.html';">
+            <span>REAL MADRID</span></div>            
+            <div class="team-button psg2" onclick="window.location.href='../HTML/psgPersonalizado.html';">
+            <span>PSG</span></div>
+            <div class="team-button man-city" onclick="window.location.href='../HTML/cityPersonalizado.html';">
+            <span>MANCHESTER CITY</span></div>
+            <div class="team-button milan" onclick="window.location.href='../HTML/milanPersonalizado.html';">
+            <span>AC MILAN</span></div>            
+            <div class="team-button leverkusen" onclick="window.location.href='../HTML/leverkusenPersonalizado.html';">
+            <span>BAYERN LEVERKUSEN</span></div>
         </div>
     </section>
+
 
     <footer>
         <div class="footer-logos">
@@ -88,5 +78,6 @@
             <a href="#">Cookies</a>
         </div>
     </footer>
+    
 </body>
 </html>

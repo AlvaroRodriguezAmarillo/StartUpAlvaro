@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Kingdom</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar text-center">🛍️ Aprovecha las mejores ofertas y descuentos disponibles 🛍️</div>
+        <div class="divider"></div>
+        <nav class="d-flex justify-content-between align-items-center p-3">
+            <div class="logo">
+                <img src="../IMG/LogotipoFootballKingdom.png" alt="Football Kingdom Logo" onclick="window.location.href='../index.html';">
+            </div>
+            <div class="search-container d-flex">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <button class="btn"><i class="fa-solid fa-search"></i></button>
+            </div>
+            <div class="icons d-flex gap-3">
+                <i class="fa-solid fa-user icon-hover" onclick="window.location.href='../HTML/registro.html';"></i>
+                <i class="fa-solid fa-cart-shopping icon-hover" onclick="window.location.href='../HTML/carrito.html';"></i>
+            </div>
+        </nav>
+        <div class="divider"></div>
+        <div class="menu d-flex justify-content-evenly py-2">
+            <button>ACTUALES</button>
+            <button>RETRO</button>
+            <button  onclick="window.location.href='../HTML/personalizado.html';">PERSONALIZACIÓN</button>
+            <button>DESCUENTOS</button>
+        </div>
+        <div class="divider"></div>
+
+    </header>
+
+    <!-- SELECCIONES -->
+    <section class="most-searched">
+        <h2>SELECCIONES NACIONALES</h2>
+        <div class="buttons-container">
+            <div class="team-button brasil2" onclick="window.location.href='../HTML/brasilRetro.html';">
+            <span>BRASIL 2002</span></div>
+            <div class="team-button holanda2" onclick="window.location.href='../HTML/holandaRetro.html';">
+            <span>HOLANDA 1988</span></div>            
+            <div class="team-button francia2" onclick="window.location.href='../HTML/franciaRetro.html';">
+            <span>FRANCIA 1998</span></div>
+        </div>
+    </section>
+
+    <!-- RETRO DESTACADAS -->
+    <section class="most-searched">
+        <h2>RETROS DISPONIBLES</h2>
+        <div class="buttons-container">
+            <div class="team-button united2" onclick="window.location.href='../HTML/unitedRetro.html';">
+            <span>MANCHESTER UNITED 2008</span></div>
+            <div class="team-button betis2" onclick="window.location.href='../HTML/betisRetro.html';">
+            <span>REAL BETIS 1997</span></div>            
+            <div class="team-button roma2" onclick="window.location.href='../HTML/romaRetro.html';">
+            <span>ROMA 1998</span></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-logos">
+            <img src="../IMG/nike.jpg" alt="Nike">
+            <img src="../IMG/adidas.jpg" alt="Adidas">
+            <img src="../IMG/puma.jpg" alt="Puma">
+            <img src="../IMG/joma.jpg" alt="Joma">
+            <img src="../IMG/hummel.jpg" alt="Hummel">
+            <img src="../IMG/umbro.jpg" alt="Umbro">
+            <img src="../IMG/apple-pay.jpg" alt="Apple Pay">
+            <img src="../IMG/paypal.jpg" alt="PayPal">
+            <img src="../IMG/visa.png" alt="Visa">
+            <img src="../IMG/seur.png" alt="SEUR">
+        </div>
+        <div class="footer-info">
+            <p>©2025 Football Kingdom. Todos los derechos reservados.</p>
+            <a href="#">Mapa de sitio</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Políticas de privacidad</a>
+            <a href="#">Cookies</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

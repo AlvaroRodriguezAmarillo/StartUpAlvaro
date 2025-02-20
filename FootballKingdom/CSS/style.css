@@ -271,6 +271,32 @@ nav {
     background-image: url('../IMG/monaco.jpg');
     height: 450px;  }    
 
+.brasil2 {  
+    background-image: url('../IMG/brasil2002.jpg');
+    height: 450px;  } 
+
+.holanda2 {  
+    background-image: url('../IMG/holanda1988.jpg');
+    height: 450px;  } 
+
+.francia2 {  
+    background-image: url('../IMG/francia1998.jpg');
+    height: 450px;  } 
+
+.united2 {  
+    background-image: url('../IMG/united2008.jpg');
+    height: 450px;  } 
+
+.betis2 {  
+    background-image: url('../IMG/betis1997.jpg');
+    height: 450px;  } 
+
+.roma2 {  
+    background-image: url('../IMG/roma1998.jpg');
+    height: 450px;  } 
+
+
+
 h2{
     margin-left: 50px;
 }

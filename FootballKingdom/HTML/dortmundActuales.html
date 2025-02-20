@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Kingdom</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Equipaciones Actuales - Football Kingdom</title>
+    <link rel="stylesheet" href="../CSS/actuales.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -12,58 +12,59 @@
 </head>
 <body>
     <header>
-        <div class="top-bar text-center">🛍️ Aprovecha las mejores ofertas y descuentos disponibles 🛍️</div>
+        <div class="top-bar">🛍️ Aprovecha las mejores ofertas y descuentos disponibles 🛍️</div>
         <div class="divider"></div>
-        <nav class="d-flex justify-content-between align-items-center p-3">
+        <nav>
             <div class="logo">
                 <img src="../IMG/LogotipoFootballKingdom.png" alt="Football Kingdom Logo" onclick="window.location.href='../index.html';">
             </div>
-            <div class="search-container d-flex">
-                <input type="text" class="form-control" placeholder="Buscar...">
-                <button class="btn"><i class="fa-solid fa-search"></i></button>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar...">
+                <button><i class="fa-solid fa-search"></i></button>
             </div>
-            <div class="icons d-flex gap-3">
-                <i class="fa-solid fa-user icon-hover" onclick="window.location.href='../HTML/registro.html';"></i>
-                <i class="fa-solid fa-cart-shopping icon-hover" onclick="window.location.href='../HTML/carrito.html';"></i>
+            <div class="icons">
+                <i class="fa-solid fa-user" onclick="window.location.href='registro.html';"></i>
+                <i class="fa-solid fa-cart-shopping" onclick="window.location.href='carrito.html';"></i>
             </div>
         </nav>
         <div class="divider"></div>
-        <div class="menu d-flex justify-content-evenly py-2">
+        <div class="menu">
             <button onclick="window.location.href='../HTML/actuales.html';">ACTUALES</button>
             <button onclick="window.location.href='../HTML/retro.html';">RETRO</button>
             <button onclick="window.location.href='../HTML/personalizado.html';">PERSONALIZACIÓN</button>
             <button onclick="window.location.href='../HTML/descuentos.html';">DESCUENTOS</button>
         </div>
         <div class="divider"></div>
-
     </header>
 
-    <!-- SELECCIONES -->
-    <section class="most-searched">
-        <h2>SELECCIONES NACIONALES</h2>
-        <div class="buttons-container">
-            <div class="team-button brasil2" onclick="window.location.href='../HTML/brasilRetro.html';">
-            <span>BRASIL 2002</span></div>
-            <div class="team-button holanda2" onclick="window.location.href='../HTML/holandaRetro.html';">
-            <span>HOLANDA 1988</span></div>            
-            <div class="team-button francia2" onclick="window.location.href='../HTML/franciaRetro.html';">
-            <span>FRANCIA 1998</span></div>
+    <section class="product-container">
+        <div class="product-images">
+            <img src="../IMG/CamisetaDortmundDelantera.jpg" alt="Equipación Frontal">
+            <img src="../IMG/CamisetaDortmundTrasera.jpg" alt="Equipación Trasera">
+        </div>
+        <div class="product-info">
+            <h1>1ª EQUIPACIÓN DORTMUND 2024/2025</h1>
+            <p class="price"><span class="old-price">69,99€</span> <span class="new-price">59,99€</span></p>
+            <p>Elige tu talla:</p>
+            <div class="size-buttons">
+                <button>XS</button>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+                <button>XXL</button>
+            </div>
+            
+            <p>Cantidad:</p>
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <span id="quantity">1</span>
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            
+            <button class="add-to-cart" onclick="window.location.href='carrito.html';">AÑADIR AL CARRITO</button>
         </div>
     </section>
-
-    <!-- RETRO DESTACADAS -->
-    <section class="most-searched">
-        <h2>RETROS DISPONIBLES</h2>
-        <div class="buttons-container">
-            <div class="team-button united2" onclick="window.location.href='../HTML/unitedRetro.html';">
-            <span>MANCHESTER UNITED 2008</span></div>
-            <div class="team-button betis2" onclick="window.location.href='../HTML/betisRetro.html';">
-            <span>REAL BETIS 1997</span></div>            
-            <div class="team-button roma2" onclick="window.location.href='../HTML/romaRetro.html';">
-            <span>ROMA 1998</span></div>
-        </div>
-    </section>
-
 
     <footer>
         <div class="footer-logos">
@@ -86,6 +87,7 @@
             <a href="#">Cookies</a>
         </div>
     </footer>
-    
+
+    <script src="../JS/productos.js"></script>
 </body>
 </html>

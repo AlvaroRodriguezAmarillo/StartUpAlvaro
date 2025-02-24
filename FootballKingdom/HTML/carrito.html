@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../CSS/actuales.css">
     <link rel="stylesheet" href="../CSS/registro.css">
     <link rel="stylesheet" href="../CSS/carrito.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,16 +117,156 @@
             <img src="../IMG/seur.png" alt="SEUR">
         </div>
         <div class="footer-info">
-            <p>©2025 Football Kingdom. Todos los derechos reservados.</p>
+            <div class="footer-copyright">
+                <p>©2025 Football Kingdom. Todos los derechos reservados.</p>
+            </div>
             <div class="footer-links">
-                <a href="#">Mapa de sitio</a>
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Políticas de privacidad</a>
-                <a href="#">Cookies</a>
+                <a href="#" class="sitemap-toggle">Mapa de sitio</a>
+                <a href="#" id="terminosLink">Términos y condiciones</a>
+                <a href="#" id="privacidadLink">Políticas de privacidad</a>
+                <a href="#" id="cookiesLink">Cookies</a>
+            </div>
+            <div class="sitemap-wrapper">
+                <div class="sitemap-content">
+                    <div class="sitemap-grid">
+                        <div class="sitemap-section">
+                            <h3>Categorías Principales</h3>
+                            <ul>
+                                <li><a href="HTML/actuales.html">Actuales</a></li>
+                                <li><a href="HTML/retro.html">Retro</a></li>
+                                <li><a href="HTML/personalizado.html">Personalización</a></li>
+                                <li><a href="HTML/descuentos.html">Descuentos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sitemap-section">
+                            <h3>Equipos Más Buscados</h3>
+                            <ul>
+                                <li><a href="HTML/milanActuales.html">AC Milán</a></li>
+                                <li><a href="HTML/madridActuales.html">Real Madrid</a></li>
+                                <li><a href="HTML/liverpoolActuales.html">Liverpool</a></li>
+                                <li><a href="HTML/cityActuales.html">Manchester City</a></li>
+                                <li><a href="HTML/bayernActuales.html">Bayern Munich</a></li>
+                                <li><a href="HTML/barcelonaActuales.html">FC Barcelona</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sitemap-section">
+                            <h3>Equipos Destacados</h3>
+                            <ul>
+                                <li><a href="HTML/psgActuales.html">PSG</a></li>
+                                <li><a href="HTML/interActuales.html">Inter de Milán</a></li>
+                                <li><a href="HTML/arsenalActuales.html">Arsenal</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sitemap-section">
+                            <h3>Usuario</h3>
+                            <ul>
+                                <li><a href="HTML/registro.html">Registro/Login</a></li>
+                                <li><a href="HTML/carrito.html">Carrito de Compras</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sitemap-section">
+                            <h3>Legal</h3>
+                            <ul>
+                                <li><a href="#" id="terminosLink2">Términos y condiciones</a></li>
+                                <li><a href="#" id="privacidadLink2">Políticas de privacidad</a></li>
+                                <li><a href="#" id="cookiesLink2">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Modales -->
+    <!-- Modal Términos y Condiciones -->
+    <div id="terminosModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Términos y Condiciones</h2>
+            <div class="modal-body">
+                <h3>1. Aceptación de los Términos</h3>
+                <p>Al acceder y utilizar Football Kingdom, aceptas estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguna parte de estos términos, no debes usar nuestro sitio web.</p>
+
+                <h3>2. Uso del Sitio</h3>
+                <p>Te comprometes a utilizar el sitio web únicamente para fines legales y de manera que no infrinja los derechos de terceros ni restrinja su uso del sitio.</p>
+
+                <h3>3. Productos y Precios</h3>
+                <p>Todos los productos están sujetos a disponibilidad. Nos reservamos el derecho de modificar los precios en cualquier momento sin previo aviso.</p>
+
+                <h3>4. Proceso de Compra</h3>
+                <p>Al realizar un pedido, recibirás una confirmación por email. El contrato de compra no se considerará finalizado hasta que confirmemos el envío de los productos.</p>
+
+                <h3>5. Envíos y Devoluciones</h3>
+                <p>Los gastos de envío se calcularán en función del destino. Aceptamos devoluciones dentro de los 14 días siguientes a la recepción del producto.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Política de Privacidad -->
+    <div id="privacidadModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Política de Privacidad</h2>
+            <div class="modal-body">
+                <h3>Información que Recopilamos</h3>
+                <p>Recopilamos la siguiente información personal:</p>
+                <ul>
+                    <li>Nombre y apellidos</li>
+                    <li>Dirección de correo electrónico</li>
+                    <li>Dirección de envío</li>
+                    <li>Información de pago</li>
+                </ul>
+
+                <h3>Uso de la Información</h3>
+                <p>Utilizamos tu información personal para:</p>
+                <ul>
+                    <li>Procesar tus pedidos</li>
+                    <li>Comunicarnos contigo sobre tu cuenta</li>
+                    <li>Enviarte actualizaciones sobre productos</li>
+                    <li>Mejorar nuestros servicios</li>
+                </ul>
+
+                <h3>Protección de Datos</h3>
+                <p>Implementamos medidas de seguridad para proteger tu información personal y cumplimos con el RGPD y demás normativas aplicables.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cookies -->
+    <div id="cookiesModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Política de Cookies</h2>
+            <div class="modal-body">
+                <h3>¿Qué son las cookies?</h3>
+                <p>Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio web.</p>
+
+                <h3>Tipos de Cookies que Utilizamos</h3>
+                <ul>
+                    <li><strong>Cookies Necesarias:</strong> Esenciales para el funcionamiento del sitio</li>
+                    <li><strong>Cookies de Preferencias:</strong> Guardan tus preferencias de navegación</li>
+                    <li><strong>Cookies Analíticas:</strong> Nos ayudan a mejorar el rendimiento del sitio</li>
+                    <li><strong>Cookies de Marketing:</strong> Utilizadas para publicidad personalizada</li>
+                </ul>
+
+                <h3>Control de Cookies</h3>
+                <p>Puedes gestionar las cookies a través de la configuración de tu navegador. Ten en cuenta que deshabilitar ciertas cookies puede afectar al funcionamiento del sitio.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../JS/productos.js"></script>
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/modal.js"></script>
     <script src="../JS/carrito.js"></script>
+    
 </body>
 </html>
+
+

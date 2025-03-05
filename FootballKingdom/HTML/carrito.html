@@ -98,7 +98,7 @@
                     <span>TOTAL</span>
                     <span id="total">0,00€</span>
                 </div>
-                <button  onclick="window.location.href='../index.html';" class="purchase-button">REALIZAR COMPRA</button>
+                <button id="btnRealizarCompra" class="purchase-button">REALIZAR COMPRA</button>
             </div>
         </div>
     </main>
@@ -265,6 +265,20 @@
     <script src="../JS/footer.js"></script>
     <script src="../JS/modal.js"></script>
     <script src="../JS/carrito.js"></script>
+
+<!-- Modal de Confirmación de Compra -->
+<div id="confirmacionModal" class="modal-overlay">
+    <div class="modal-content">
+        <h2 class="modal-title">Confirmar Compra</h2>
+        <p>¿Está seguro de que desea realizar la compra?</p>
+        <div class="modal-buttons">
+            <button id="confirmarCompra" class="modal-button confirm">Confirmar</button>
+            <button id="cancelarCompra" class="modal-button cancel">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+
     
 </body>
 </html>

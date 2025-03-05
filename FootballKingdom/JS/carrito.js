@@ -39,3 +39,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     renderCart();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnRealizarCompra = document.getElementById("btnRealizarCompra");
+    const confirmacionModal = document.getElementById("confirmacionModal");
+    const confirmarCompra = document.getElementById("confirmarCompra");
+    const cancelarCompra = document.getElementById("cancelarCompra");
+
+    // Mostrar el modal al hacer clic en "REALIZAR COMPRA"
+    btnRealizarCompra.addEventListener("click", function () {
+        confirmacionModal.style.display = "flex";
+    });
+
+    // Confirmar la compra y redirigir al index
+    confirmarCompra.addEventListener("click", function () {
+        confirmacionModal.style.display = "none";
+        alert("¡Compra realizada con éxito! Gracias por su compra.");
+        window.location.href = "../index.html"; // Redirige al inicio
+    });
+
+    // Cerrar el modal si el usuario cancela
+    cancelarCompra.addEventListener("click", function () {
+        confirmacionModal.style.display = "none";
+    });
+});
